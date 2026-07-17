@@ -1,10 +1,6 @@
 """
-scanner.py
-------------
 Scans the local network using Scapy and returns
 a list of active devices.
-
-Author: Himanshu Rawat
 """
 
 from scapy.all import ARP, Ether, srp

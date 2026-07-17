@@ -1,6 +1,4 @@
 """
-monitor.py
------------------
 Keeps track of devices and determines
 whether they are Online, Offline, or New.
 """

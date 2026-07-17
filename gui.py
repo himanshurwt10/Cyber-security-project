@@ -1,6 +1,5 @@
 """
 GUI for Network Device Monitor
-Author: Himanshu Rawat
 """
 
 import tkinter as tk
