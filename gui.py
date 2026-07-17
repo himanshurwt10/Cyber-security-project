@@ -1,8 +1,5 @@
 """
-gui.py
-------------------------------
 GUI for Network Device Monitor
-
 Author: Himanshu Rawat
 """
 
