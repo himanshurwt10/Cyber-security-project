@@ -48,14 +48,7 @@ class NetworkMonitorGUI:
         title.pack(pady=10)
         self.network_label = tk.Label(
             self.root,
-            text=f"Network : {get_local_network()}",
-            font=("Arial", 11)
-        )
-
-        self.network_label.pack()
-        self.network_label = tk.Label(
-            self.root,
-            text=f"Network : {get_local_network()}",
+            text=f"Network : Local Network",
             font=("Arial", 11)
         )
 
@@ -201,7 +194,15 @@ class NetworkMonitorGUI:
         # Bottom Frame
         # --------------------------
         bottom = tk.Frame(self.root)
+        footer = tk.Label(
+            self.root,
+            text="Developed by Himanshu Rawat\nPython • Scapy • Tkinter",
+            font=("Arial", 9),
+            fg="lightgray",
+            bg="#2b2b2b"
+        )       
 
+        footer.pack(side="bottom", pady=5)
         bottom.pack(
             fill="x",
             padx=20,
@@ -258,7 +259,7 @@ class NetworkMonitorGUI:
         if self.scanning:
             return
         self.network_label.config(
-            text=f"Network : {get_local_network()}"
+            text=f"Network : Local Network"
         )
 
         self.scanning = True
